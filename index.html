@@ -144,6 +144,36 @@
     justify-content: center;
     text-align: center;
     padding: 140px 24px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://raw.githubusercontent.com/tjxw7/equipleads-landing/main/BG8.png');
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 0.85;
+  }
+
+  .hero > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (min-width: 900px) {
+    .hero {
+      text-align: left;
+      align-items: flex-end;
+      padding: 140px 8% 100px;
+    }
+    .hero-badge { align-self: flex-end; }
+    .hero-h1 { margin: 0 0 24px; }
+    .hero-sub { margin: 0 0 48px; }
+    .hero-cta-group { align-items: flex-start; }
   }
 
   .hero-badge {
@@ -930,6 +960,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-bg"></div>
   <div class="hero-badge">
     <span class="hero-badge-dot"></span>
     Exclusively for equipment rental companies
