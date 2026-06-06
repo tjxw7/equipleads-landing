@@ -697,6 +697,67 @@
     .process-grid { grid-template-columns: 1fr; }
     .stat-strip-inner { grid-template-columns: 1fr 1fr; }
   }
+
+  /* VSL */
+  .vsl-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .vsl-inner {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--black-mid);
+  }
+
+  .vsl-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: var(--black-mid);
+  }
+
+  .vsl-icon {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--white-faintest);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vsl-label {
+    font-family: var(--font-display);
+    font-size: 18px;
+    color: var(--white-dim);
+  }
+
+  .vsl-sublabel {
+    font-size: 13px;
+    color: rgba(240,240,240,0.3);
+    max-width: 360px;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .vsl-inner iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
 </style>
 </head>
 <body>
