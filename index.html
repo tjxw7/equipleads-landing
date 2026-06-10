@@ -578,10 +578,10 @@
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 16px 20px; }
-    .hero-desktop { display: none; }
-    .hero-desktop-new { display: none; }
+    .hero-desktop { display: none !important; }
+    .hero-desktop-new { display: none !important; }
     .hero-mobile { display: flex; }
-    .mobile-only-img { display: block; }
+    .mobile-only-img { display: none !important; }
     .stat-strip-inner { grid-template-columns: repeat(2, 1fr); }
     .stat-item:nth-child(2) { border-right: none; }
     .stat-item:nth-child(3) { border-top: 1px solid var(--border); }
@@ -663,8 +663,15 @@
   }
 
 
+
+
+
   @media (max-width: 900px) {
-    .hero-mobile .vsl-wrap { display: none; }
+    .hero-mobile {
+      padding-top: 90px;
+      padding-bottom: 60px;
+      min-height: auto;
+    }
   }
 
 </style>
@@ -698,9 +705,9 @@
 <!-- MOBILE HERO -->
 <div class="hero-mobile">
   <div class="eyebrow" style="margin-bottom:14px">We are the #1</div>
-  <h1 class="hero-h1">Lead providers for<br><em style="color:var(--white-dim)">equipment rental companies</em></h1>
+  <h1 class="hero-h1">Lead providers for<br><em style="color:var(--gold-light)">equipment rental companies</em></h1>
   <p class="hero-sub">The only lead generation system built exclusively for heavy equipment rental yards. We do one thing — and we do it better than anyone.</p>
-  <div class="vsl-wrap" style="margin-bottom:36px">
+  <div class="vsl-wrap" style="margin-bottom:32px;width:100%;">
     <iframe src="https://player.vimeo.com/video/1199981957?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
   <a href="https://calendly.com/equipleads/meta-ads-strategy-session" target="_blank" class="btn-primary">
